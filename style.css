@@ -56,7 +56,7 @@ header {
 
 nav {
     margin: 0 120px;
-    padding-top: 50px;
+    padding-top: 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -209,6 +209,7 @@ nav {
     -------------------------------------------------------------- */
 .features{
     margin: 100px;
+    padding-bottom: 50px;
     align-items: center;
     gap: 55px;
     position: relative;
@@ -271,7 +272,54 @@ nav {
                      Facts Section Starts Here 
 ---------------------------------------------------------------*/
 
-
+.some-facts{
+    padding: 0 10px;
+}
+.fact-title{
+    padding: 20px 0 20px 0px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    color: var(--font-color);
+}
+.some-facts .primary-description{
+    padding: 0 800px 0 0;
+}
+.fact-boxes{
+    justify-content: space-around;
+    margin: 90px 0;
+}
+.fact-box{
+    width: 242px;
+    height: 242px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #FF900E;
+    cursor: pointer;
+}
+.fact-box:hover{
+    background-color: rgba(255, 0, 0, 0.071);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.197),
+                inset -2px -2px 5px rgba(0, 0, 0, 0.197),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.126),
+                inset -5px -5px 10px rgba(0, 0, 0, 0.126);
+}
+.fact-boxes .point{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+}
+.fact-box>p{
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color);
+    font-weight: 600;
+}
 
 /*----------------------------------------------------------
                      Facts Section Ends Here 
