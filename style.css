@@ -55,7 +55,7 @@ header {
 }
 
 nav {
-    margin: 0 200px;
+    margin: 0 120px;
     padding-top: 50px;
     display: flex;
     flex-flow: row nowrap;
@@ -203,3 +203,76 @@ nav {
 /*-------------------------------------------------------
                     Team Section Ends Here
     ----------------------------------------------------------- */
+
+/* --------------------------------------------------------
+                     Feature Section Starts Here 
+    -------------------------------------------------------------- */
+.features{
+    margin: 100px;
+    align-items: center;
+    gap: 55px;
+    position: relative;
+}
+.features-text{
+}
+.features-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--font-color);
+    border-left: 5px solid var(--btn-color);
+    padding:0 50px 0 25px;
+    margin: 25px 0;
+}
+.features-para{
+    padding-bottom: 20px;
+}
+.features-items{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+.feature-item{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.feature-item:hover{
+    background-color: rgba(255, 192, 203, 0.245);
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.293);
+    transform: translate(-5px, 5px);
+}
+.item-description{
+    padding-top: 10px;
+}
+.exprience{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 45px;
+    transform: translateX(-50%);
+}
+.exp-title{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.exprience>p{
+    padding-top: 10px;
+    text-align: center;
+}
+/* ---------------------------------------------------------
+                     Feature Section Ends Here 
+-------------------------------------------------------------- */
+
+/*----------------------------------------------------------
+                     Facts Section Starts Here 
+---------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------
+                     Facts Section Ends Here 
+---------------------------------------------------------------*/
