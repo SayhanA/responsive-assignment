@@ -1,0 +1,205 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-color: #131313;
+    --text-color:#727272;
+    --btn-color:#FF900E;
+}
+.container{
+    margin: 85px 100px;
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.col-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+/* .header-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    color: var(--font-color);
+} */
+
+/*---------------------------------------------------------
+                 Header Nav Section Starts Here
+    ------------------------------------------------------------ */
+input {
+    display: none;
+}
+
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+    margin: 0 200px;
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.nav-title {
+    font-size: 30px;
+    line-height: 53px;
+    font-weight: 700;
+    color: var(--font-color);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.nav-title:hover{
+    text-shadow: -5px 5px 2px rgba(0, 0, 0, 0.325);
+    transform: translate(5px, 5px);
+}
+
+.nav-title>h2>span {
+    color: red;
+}
+
+.nav-list {
+    white-space: nowrap;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.nav-list>li {
+    padding-left: 10px;  
+}
+
+.nav-list>li>a {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #424242;
+}
+.nav-list>li>a:hover{
+    font-weight: 600;
+}
+
+.nav-list>li>a::after {
+    display: block;
+    content: "";
+    border-bottom: 4px solid rgb(16, 215, 255);
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+}
+
+.nav-list>li>a:hover:after {
+    transform: scale(1);
+}
+
+
+/*---------------------------------------------------------
+                 Header Nav Section Ends Here
+    ------------------------------------------------------------ */
+
+
+/*--------------------------------------------------------
+                 Header Ban Section Starts Here 
+    -------------------------------------------------------------*/
+.header-ban {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+
+.header-text {
+    margin: 0 0 32px 0;
+    width: 862px;
+    height: 225px;
+    justify-content: space-between;
+}
+
+.header-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--font-color);
+}
+.primary-description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--text-color);
+}
+.header-btn,.primary-btn{
+    padding: 25px;
+    margin-bottom: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: var(--btn-color);
+    cursor: pointer;
+}
+.header-btn:hover,
+.primary-btn:hover{
+    background-color: rgb(255, 98, 0);
+    font-weight: 700;
+}
+.header-btn:focus,
+.primary-btn:focus{
+    background-color: green;
+}
+
+.header-img{
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+    margin: 45px 200px;
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------
+                 Header Ban Section Ends Here 
+    -------------------------------------------------------------*/
+
+
+/*----------------------------------------------------- 
+                    Team Section Starts Here
+     -------------------------------------------------------*/  
+     
+.team{
+    gap: 75px;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.team-description .primary-description{
+    padding-bottom: 30px;
+}
+
+     
+/*-------------------------------------------------------
+                    Team Section Ends Here
+    ----------------------------------------------------------- */
