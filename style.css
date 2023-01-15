@@ -39,12 +39,7 @@ body {
     display: none;
 }
 
-/* .header-text {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 75px;
-    color: var(--font-color);
-} */
+
 
 /*---------------------------------------------------------
                  Header Nav Section Starts Here
@@ -82,6 +77,63 @@ nav {
 .nav-title>h2>span {
     color: red;
 }
+
+ /* Hamburger Menu Style Starts Here */
+
+ .nav .menu-icon{
+    display: none;
+    position: relative;
+    background-color: transparent;
+    padding: 25px 0px 30px 30px;
+    order: 1;
+}
+.nav .menu-btn{
+    display: none;
+}
+.nav .menu-icon .nav-icon{
+    display: block;
+    background-color: var(--font-color);
+    height: 3px;
+    width: 25px;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+.nav .menu-icon .nav-icon::before{
+    content: "";
+    display: block;
+    background-color: var(--font-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -6.8px;
+    transition: all .2s ease-in-out;
+}
+.nav .menu-icon .nav-icon::after{
+    content: "";
+    display: block;
+    background-color: var(--font-color);
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 6.8px;
+    transition: all .2s ease-in-out;
+}
+.nav input:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
+}
+.nav input:checked ~ .menu-icon .nav-icon::before{
+    top: 0;
+    transform: rotate(45deg);
+}
+.nav input:checked ~ .menu-icon .nav-icon::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+.nav input:checked ~ .nav-list{
+    left: 0;
+}
+
+
 
 .nav-list {
     white-space: nowrap;
@@ -195,6 +247,7 @@ nav {
      
 .team{
     gap: 7%;
+    position: relative;
 }
 .team>div{
 
@@ -213,6 +266,11 @@ nav {
 }
 .team-description .primary-description{
     padding-bottom: 30px;
+}
+.team .primary-btn{
+    position: absolute;
+    left: 63%;
+    top: 60%;
 }
 
      
@@ -594,57 +652,8 @@ footer>p{
 
     .nav .menu-icon{
         display: block;
-        position: relative;
-        background-color: transparent;
-        padding: 25px 0px 30px 30px;
-        order: 1;
     }
-    .nav .menu-btn{
-        display: none;
-    }
-    .nav .menu-icon .nav-icon{
-        display: block;
-        background-color: var(--font-color);
-        height: 3px;
-        width: 25px;
-        position: relative;
-        transition: all .2s ease-in-out;
-    }
-    .nav .menu-icon .nav-icon::before{
-        content: "";
-        display: block;
-        background-color: var(--font-color);
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: -6.8px;
-        transition: all .2s ease-in-out;
-    }
-    .nav .menu-icon .nav-icon::after{
-        content: "";
-        display: block;
-        background-color: var(--font-color);
-        height:100%;
-        width: 100%;
-        position: absolute;
-        top: 6.8px;
-        transition: all .2s ease-in-out;
-    }
-    .nav input:checked ~ .menu-icon .nav-icon{
-        background-color: transparent;
-    }
-    .nav input:checked ~ .menu-icon .nav-icon::before{
-        top: 0;
-        transform: rotate(45deg);
-    }
-    .nav input:checked ~ .menu-icon .nav-icon::after{
-        top: 0;
-        transform: rotate(-45deg);
-    }
-    .nav input:checked ~ .nav-list{
-        left: 0;
-    }
-
+    
     /* Hamburger Menu Style Ends Here */
 
 
@@ -700,6 +709,7 @@ footer>p{
         margin: 0;
     }
     .team-images{
+        width: 100%;
         order: 2;
         grid-template-columns: repeat(1,1fr);
     }
@@ -721,6 +731,7 @@ footer>p{
     }
     .team .primary-btn{
         order: 3;
+        position: static;
     }
     /* ---------------------Team Section Ends Here --------------------*/
 
@@ -731,6 +742,9 @@ footer>p{
     }
     .features-text{
         width: 100%;
+    }
+    .features-title{
+        padding-right: 0;
     }
     .feature-items{
         padding: 0%;
@@ -898,57 +912,7 @@ footer>p{
 
     .nav .menu-icon{
         display: block;
-        position: relative;
-        background-color: transparent;
-        padding: 25px 0px 30px 30px;
-        order: 1;
     }
-    .nav .menu-btn{
-        display: none;
-    }
-    .nav .menu-icon .nav-icon{
-        display: block;
-        background-color: var(--font-color);
-        height: 3px;
-        width: 25px;
-        position: relative;
-        transition: all .2s ease-in-out;
-    }
-    .nav .menu-icon .nav-icon::before{
-        content: "";
-        display: block;
-        background-color: var(--font-color);
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: -6.8px;
-        transition: all .2s ease-in-out;
-    }
-    .nav .menu-icon .nav-icon::after{
-        content: "";
-        display: block;
-        background-color: var(--font-color);
-        height:100%;
-        width: 100%;
-        position: absolute;
-        top: 6.8px;
-        transition: all .2s ease-in-out;
-    }
-    .nav input:checked ~ .menu-icon .nav-icon{
-        background-color: transparent;
-    }
-    .nav input:checked ~ .menu-icon .nav-icon::before{
-        top: 0;
-        transform: rotate(45deg);
-    }
-    .nav input:checked ~ .menu-icon .nav-icon::after{
-        top: 0;
-        transform: rotate(-45deg);
-    }
-    .nav input:checked ~ .nav-list{
-        left: 0;
-    }
-
     /* Hamburger Menu Style Ends Here */
 
 
@@ -1031,6 +995,7 @@ footer>p{
     .team .primary-btn{
         margin-top: 20px;
         order: 3;
+        position: static;
     }
     /* ---------------------Team Section Ends Here --------------------*/
 
