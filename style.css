@@ -1143,3 +1143,75 @@ footer>p{
     
     /* --------------------Footer Ends Here --------------------------*/
 }
+
+/* ----------------------Extra Large devices --------------------------*/
+
+@media only screen and (min-width:993px) and (max-width:1320px){
+  
+    nav{
+        width: 100%;
+        padding: 40px;
+        margin: 0%;
+    }
+    .nav-list {
+        white-space: nowrap;
+        gap: 10px;
+        list-style: none;
+    
+    }
+    /*------------------- Feature Section Starts Here ---------------- */
+     
+    .exprience{
+        position: absolute;
+        bottom: 40%;
+        left: 70%;
+        padding: 45px;
+        background-color: rgba(255, 166, 0, 0.19);
+        z-index: 1;
+    }
+    .feature-item:hover{
+        z-index: 10;
+    }
+     
+    /*------------------- Feature Section Starts Here ---------------- */
+    
+    /*------------- Running Projects Section Starts Here ------------*/
+
+    .projects{
+        margin: 0;
+    }
+    .projects .projects-title{
+        padding: 40px 0 0 0;
+    }
+    .projects-description{
+        padding: 20px 2% 50px 2%;
+    }
+    .project-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px ;
+        perspective: 4000px;
+    }
+    .see{
+        margin: 20px 70px 0 0 ;
+    }
+    
+    
+    /*------------- Running Projects Section Ends Here ------------*/
+
+
+
+     /*---------------- Sponsors Section Starts Here ------------------*/
+
+     .sponsors>p {
+        padding: 20px 2% 50px 2%;
+        text-align: center;
+    }
+    .sponsor-brand{
+        grid-template-columns: repeat(3,200px);
+        text-align: center; 
+    }
+
+
+/*---------------- Sponsors Section Starts Here ------------------*/
+}
