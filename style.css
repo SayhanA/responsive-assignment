@@ -504,8 +504,6 @@ footer>p{
  ------------------------------------------------------------------*/
 
 
-
-
  /*-----------------------------------------------------------
                  Media Queries Starts Here 
     --------------------------------------------------------------*/
@@ -542,8 +540,11 @@ footer>p{
         width: 180px;
         border-bottom: 2px solid rgba(192, 192, 192, 0.414);
         padding:0 25px 0 50px;
-        text-decoration: none;
-        
+        text-decoration: none; 
+        transition: all .1s;
+    }
+    .nav-list>li:hover{
+        border-bottom: 2px solid rgba(0, 96, 250, 0.581);
     }
     .nav-list>li>a{
         line-height: 55px;
@@ -622,7 +623,44 @@ footer>p{
         color: rgb(0, 140, 255);
     }
 
+    /* Nav Style Ends Here */
 
+    /* Header Banner Starts Here */
+    
+    .header-ban{
+        margin: 20px 0;
+    }
+    .header-text{
+        width: 100%;
+        padding:0 20px;
+    }
+    .header-title{
+        font-size: 30px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .header-btn{
+        margin-top: 80px;
+    }
+    .header-img{
+        width: 85%;
+        height: auto;
+        overflow: hidden;
+        margin: 45px 200px;
+        border-radius: 10px;
+    }
+    .header-img>img{
+        width: 100%;
+    }
+    
+    
+    /* Header Banner Ends Here */
+
+    /* Team Section Starts Here */
+
+    
+    
+    /* Team Section Ends Here */
 
 
     .none{
