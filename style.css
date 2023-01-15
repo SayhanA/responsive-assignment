@@ -510,6 +510,21 @@ footer>p{
 
 /*----------------- Mobile devices------------------------- */
 @media only screen and (max-width:576px){
+
+    .flex{
+        flex-flow: column nowrap;
+    }
+    .container{
+        margin: 50px 7%;
+    }
+    .primary-description{
+        align-items:center;
+        text-align: center;
+    }
+    
+    
+    
+    
     /* nav styles starts here*/
     nav{
         width: 100%;
@@ -658,9 +673,71 @@ footer>p{
 
     /* Team Section Starts Here */
 
+    .team{
+        padding: 0;
+        margin: 0;
+    }
+    .team-images{
+        order: 2;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-images>.image>img{
+        width: 100%;
+    }
+    .team-description{
+        padding: ;
+        order: 1;
+    }
+    .team-description{
+        
+    }
+    .primary-description{
+        text-align: center;
+    }
+    .primary-btn{
+        display: block;
+        margin: 0 auto;
+    }
+    /* ---------------------Team Section Ends Here --------------------*/
+
+    /*------------------- Feature Section Starts Here ---------------- */
     
+    .features{
+        margin: 7%;
+    }
+    /* .features-title{
+        border-left: 0;
+        border-bottom: 3px solid var(--btn-color);
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    } */
+    .feature-items{
+        padding: 0%;
+        margin: 0%;
+    }
+    .feature-item{
+        padding: 20px;
+        text-align: center;
+    }
+    .item-description{
+        padding: 25px 0;
+        text-align: justify;
+    }
+    .features-img>img{
+        width: 100%;
+    }
+    .exprience{
+        bottom: -100px;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .exp-title{
+        font-size: 40px;
+        text-align: center;
+    }
     
-    /* Team Section Ends Here */
+    /*------------------- Feature Section Ends Here ---------------- */
 
 
     .none{
