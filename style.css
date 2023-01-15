@@ -208,7 +208,7 @@ nav {
                      Feature Section Starts Here 
     -------------------------------------------------------------- */
 .features{
-    margin: 100px;
+    margin: 150px 100px 100px 100px;
     padding-bottom: 50px;
     align-items: center;
     gap: 55px;
@@ -272,10 +272,17 @@ nav {
                      Facts Section Starts Here 
 ---------------------------------------------------------------*/
 
+
+
+
+/*----------------------------------------------------------
+                     Facts Section Ends Here 
+---------------------------------------------------------------*/
+
 .some-facts{
     padding: 0 10px;
 }
-.fact-title,.sponsors-title{
+.fact-title,.sponsors-title,.projects-title{
     padding: 20px 0 20px 0px;
     font-size: 45px;
     font-weight: 700;
@@ -292,6 +299,7 @@ nav {
 .fact-box{
     width: 242px;
     height: 242px;
+    margin-bottom: 70px;
     border-radius: 8px;
     display: flex;
     flex-flow: column nowrap;
@@ -324,7 +332,113 @@ nav {
 /*----------------------------------------------------------
                      Facts Section Ends Here 
 ---------------------------------------------------------------*/
+/*-------------------------------------------------------------
+                Running Projects Section Starts Here 
+-------------------------------------------------------------------*/
 
+hr{
+    height: 2px;
+    background-image: linear-gradient(90deg,transparent, red, transparent);
+    border: none;
+}
+
+.projects{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0% 0px 0% ;
+}
+.projects-description{
+    padding: 20px 22% 50px 22%;
+    text-align: center;
+}
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px ;
+    perspective: 4000px;
+}
+.project-cards>div{
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.184);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    /* transform: rotateX(5deg); */
+}
+.project-cards>div:hover{
+    background:linear-gradient(45deg,rgba(255, 4, 4, 0.078),rgba(255, 255, 255, 0.429) 50%,rgba(15, 157, 5, 0.127));
+    transform: rotateX(5deg);
+}
+.card-header{
+    padding: 20px 0;
+}
+.card-price{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 5px 0;
+}
+.card-price>span{
+    color: var(--font-color);
+}
+.card-ratting{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--btn-color);
+    padding-bottom: 10px;
+}
+.material-symbols-outlined{
+    position: relative;
+    top: 5px;
+}
+.ratting-point{
+    font-size: 19px;
+    font-weight: 600;
+    position: relative;
+    top: 3px;
+    color: var(--font-color);
+}
+
+.card-text{
+    padding: 5px 0;
+    color: rgb(133, 133, 133);
+
+}
+.card-text>span{
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+
+.img>img{
+    width: 280px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.see{
+    font-size: 20px;
+    color: var(--font-color);
+    font-weight: 700;
+    line-height: 50px;
+    margin: 50px 50px 0 0 ;
+    position: relative;
+    left: 45%;
+    cursor: pointer;
+    transition: all .1s;
+}
+.see:hover{
+    color: red;
+}
+
+
+/*-------------------------------------------------------------
+                Running Projects Section Es Here 
+-------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------
              Our Sponsors Section Starts Here
@@ -334,6 +448,7 @@ nav {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding-top: 70px;
 }
 .sponsors>p{
     padding:0 30% 50px 30%;
