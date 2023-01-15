@@ -275,7 +275,7 @@ nav {
 .some-facts{
     padding: 0 10px;
 }
-.fact-title{
+.fact-title,.sponsors-title{
     padding: 20px 0 20px 0px;
     font-size: 45px;
     font-weight: 700;
@@ -324,3 +324,63 @@ nav {
 /*----------------------------------------------------------
                      Facts Section Ends Here 
 ---------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------
+             Our Sponsors Section Starts Here
+---------------------------------------------------------------*/
+
+.sponsors{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sponsors>p{
+    padding:0 30% 50px 30%;
+    text-align: center;
+}
+.sponsor-brand{
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    gap:80px;
+    
+}
+.brand{
+    perspective: 1000px;
+}
+.brand>img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    cursor: pointer;
+}
+.brand>img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transform: rotateX(10deg);
+}
+
+/*-----------------------------------------------------------
+             Our Sponsors Section Ends Here
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+                        Footer Starts Here 
+ ------------------------------------------------------------------*/
+ 
+footer{
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+footer>p{
+    margin: 0 auto;
+    line-height: 100px;
+    width: 90%;
+    background-color:  #FFF4E7;
+}
+
+/*--------------------------------------------------------------
+                        Footer Ends Here 
+ ------------------------------------------------------------------*/
