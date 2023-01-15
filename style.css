@@ -540,13 +540,13 @@ hr{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .sponsors .sponsors-title{
-    padding: 0px;
+    padding: 30px;
 }
 .sponsors>p{
-    padding:0 30% 50px 30%;
+    padding:0 30% 80px 30%;
     text-align: center;
 }
 .sponsor-brand{
@@ -841,6 +841,9 @@ footer>p{
 
     /*---------------- Sponsors Section Starts Here ------------------*/
 
+        .sponsors .sponsors-title{
+            padding: 0px;
+        }
         .sponsors>p {
             padding: 20px 2% 50px 2%;
             text-align: center;
@@ -850,8 +853,7 @@ footer>p{
             text-align: center; 
         }
     
-    
-    /*---------------- Sponsors Section Starts Here ------------------*/
+    /*---------------- Sponsors Section Ends Here ------------------*/
 
     /* --------------------Footer Starts Here --------------------------*/
 
